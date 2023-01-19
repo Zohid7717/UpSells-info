@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*
+!----------------------- Обнуляющий стиль --------------------!
+*/
+/*
+!---------------------- Подключения шрифта -------------------!
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap");
+/*
+!----------------------  -------------------!
+*/
+body {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.ellipse-1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  -webkit-animation-name: images;
+          animation-name: images;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes images {
+  0% {
+    background-color: lightcoral;
+  }
+  40% {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: lightsalmon;
+  }
+}
+
+@keyframes images {
+  0% {
+    background-color: lightcoral;
+  }
+  40% {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: lightsalmon;
+  }
+}
