@@ -11,13 +11,28 @@
 */
 body{
   font-family: 'Raleway';
+  background: #000;
+  overflow-x: hidden;
 }
 //font-family: 'Inter', sans-serif;
 //font-family: 'Raleway', sans-serif;
+.u-container{
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /*
 !-----------------------header---------------------!
 */
 @import "_header";
+/*
+!-----------------------hero---------------------!
+*/
+@import "_hero";
+/*
+!-----------------------features---------------------!
+*/
+@import "_features";
 /*
 !-----------------------footer---------------------!
 */
