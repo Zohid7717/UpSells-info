@@ -86,6 +86,7 @@ body {
   font-family: "Raleway";
   background: #000;
   overflow-x: hidden;
+  color: #fff;
 }
 
 .u-container {
@@ -97,6 +98,213 @@ body {
 /*
 !-----------------------header---------------------!
 */
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.header__container {
+  position: relative;
+  display: flex;
+}
+.header__body {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(2, 14, 12, 0.01);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  overflow: hidden;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -o-border-image: linear-gradient(121.05deg, #99FFF0 24.45%, #1A6358 36.21%, #020E0C 65.28%);
+     border-image: linear-gradient(121.05deg, #99FFF0 24.45%, #1A6358 36.21%, #020E0C 65.28%);
+  border-image-slice: 1;
+  -moz-column-gap: 24.5px;
+       column-gap: 24.5px;
+}
+.header__menu {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 4.65%;
+  max-width: 661.5px;
+  justify-content: space-between;
+  -moz-column-gap: 24.5px;
+       column-gap: 24.5px;
+}
+.header__logo {
+  transition: 0.3s;
+}
+.header__logo:hover {
+  opacity: 0.8;
+}
+.header__list {
+  width: 72.56%;
+}
+.header__list ul {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header__list a {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.header__list a:hover {
+  opacity: 0.8;
+}
+.header__list a:focus {
+  opacity: 0.5;
+}
+.header__burger {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 23.5px;
+  right: 20px;
+  width: 50px;
+  height: 31px;
+  align-items: center;
+  justify-content: end;
+}
+.header__burger span {
+  display: flex;
+  width: 30px;
+  height: 5px;
+  background-color: #1EEBCD;
+  border-radius: 2.5px;
+}
+.header__burger::after, .header__burger::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #BDFEF4;
+  position: absolute;
+  left: 0;
+  border-radius: 2.5px;
+}
+.header__burger::after {
+  top: 0;
+}
+.header__burger::before {
+  bottom: 0;
+}
+.header__left {
+  position: relative;
+  width: 31.4%;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  width: 100%;
+}
+.header__burger-list {
+  display: none;
+}
+.header__login-btn {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.header__login-btn:hover {
+  opacity: 0.8;
+}
+.header__login-btn:focus {
+  opacity: 0.5;
+}
+.header__join-btn {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  padding: 30px 0;
+  color: #020E0C;
+  background: #FFFFFF;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-align: center;
+  width: 72.17%;
+}
+.header__join-btn:hover {
+  opacity: 0.8;
+}
+.header__join-btn:focus {
+  opacity: 0.5;
+}
+
+.up {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1EEBCD;
+}
+
+.sells {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+/*
+!-------------------responsive----------------!
+*/
+@media (max-width: 1000px) {
+  .header__container {
+    padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  .header__body {
+    align-items: start;
+  }
+  .header__menu {
+    flex-direction: column;
+    flex-grow: 0;
+    margin: 23px 0px 30px 20px;
+    row-gap: 35px;
+  }
+  .header__left {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 699px) {
+  header {
+    background-color: #0E2E29;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .header__list {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+  .header__button {
+    display: none;
+  }
+}
 /*
 !-----------------------hero---------------------!
 */
