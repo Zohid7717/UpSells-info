@@ -1,9 +1,10 @@
-main{
+main {
   position: relative;
 }
+
 .features {
   margin-top: 200px;
-  
+
 
   &__bg {
     width: 2131px;
@@ -26,6 +27,7 @@ main{
 
   &__title {
     position: relative;
+
     p {
       font-weight: 700;
       font-size: 64px;
@@ -35,8 +37,10 @@ main{
   }
 
   &__items {
+    display: flex;
     margin-top: 79px;
     position: relative;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -87,9 +91,26 @@ main{
     flex-direction: column;
     padding: 60px;
     row-gap: 60px;
-  //   background: rgba(2, 14, 12, 0.01);
-  //   backdrop-filter: blur(20px);
-  //   border-radius: 10px;
+    background: rgba(2, 14, 12, 0.01);
+    backdrop-filter: blur(20px);
+  }
+
+  &__item-left1 {
+    border: 3px solid;
+    border-image: linear-gradient(55.05deg, #99FFF0 20.45%, #1A6358 26.21%, #000 75.28%);
+    border-image-slice: 1;
+  }
+
+  &__item-left2 {
+    border: 3px solid;
+    border-image: linear-gradient(125.05deg, #99FFF0 20.45%, #1A6358 26.21%, #000 75.28%);
+    border-image-slice: 1;
+  }
+
+  &__item-left3 {
+    border: 3px solid;
+    border-image: linear-gradient(165.05deg, #99FFF0 20.45%, #1A6358 26.21%, #000 75.28%);
+    border-image-slice: 1;
   }
 
   &__item-right {
@@ -97,13 +118,79 @@ main{
     align-items: center;
   }
 
-  &__footer {}
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
 
-  &__footer-left {}
+  &__footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 48.87%;
+    row-gap: 60px;
 
-  &__footer-btn {}
+    h2 {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 150%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #1EEBCD;
+    }
 
-  &__footer-right {}
+    p {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 150%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+    }
+  }
+
+  &__footer-btn {
+    width: 82.54%;
+    height: 87px;
+    background: #1EEBCD;
+    transition: 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+      box-shadow: 0px 4px 67px rgba(30, 235, 205, 0.6);
+    }
+
+    &:active {
+      margin-top: 5px;
+      height: 83px;
+      width: 81%;
+      margin-left: 2.5px;
+    }
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      color: #020E0C;
+      justify-content: center;
+      align-items: center;
+      
+
+    }
+  }
+
+  &__footer-right {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 48.84%;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .btn {}
