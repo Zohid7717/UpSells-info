@@ -358,9 +358,10 @@ header {
     right: -320px;
     width: 320px;
     height: 100vh;
+    border-left: 3px solid #fff;
     background: rgba(2, 14, 12, 0.589);
-    -webkit-backdrop-filter: blur(25px);
-            backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
     z-index: 2;
   }
   .header__right-visible {
